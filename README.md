@@ -1,7 +1,7 @@
 ### An Image viewer like Zalo
 
 ## Features
-* Cung cấp widge hiẻn thị hình ảnh có thao tác kéo thả để tắt và hiệu ứng Hero giống Zalo
+* Cung cấp widget hiển thị hình ảnh có thao tác kéo thả để tắt và hiệu ứng Hero giống Zalo
 * Không có xung đột cử chỉ vuốt xuống để tắt và cử chỉ phóng to
 * Hiển thị ảnh bằng photo_view và cho phép kéo thả, phóng to, thu nhỏ, vuốt xuống tắt bằng 1 ngón tay
 
