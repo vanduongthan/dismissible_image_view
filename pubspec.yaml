@@ -1,7 +1,8 @@
 name: dismissible_image_view
 description: "An image viewer widget with support zoom, pan, rotate and dismissible by one finger, dismiss gesture no conflict with photo zoom gesture"
 version: 1.0.0
-homepage:
+homepage: "https://github.com/vanduongthan/dismissible_image_view.git"
+repository: "https://github.com/vanduongthan/dismissible_image_view.git"
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
