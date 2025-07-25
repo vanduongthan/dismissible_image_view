@@ -1,0 +1,24 @@
+name: example # Tên của ứng dụng ví dụ
+description: Demonstrates how to use the image_view package.
+
+publish_to: 'none' # KHÔNG xuất bản ứng dụng ví dụ này lên pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # Khai báo dependency đến package cha (image_viewer_package)
+  dismissible_image_view:
+    path: ../ # Đường dẫn tương đối đến thư mục gốc của package cha
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
