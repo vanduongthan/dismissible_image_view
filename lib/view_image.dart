@@ -1,4 +1,5 @@
 library;
+
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 
@@ -8,7 +9,13 @@ class ImageView extends StatefulWidget {
   final String url;
   final String heroTag;
   final ImageProvider? imageProvider;
-  const ImageView({super.key, this.url = '', required this.heroTag, this.imageProvider, });
+
+  const ImageView({
+    super.key,
+    this.url = '',
+    required this.heroTag,
+    this.imageProvider,
+  });
 
   @override
   State<ImageView> createState() => _ImageViewState();
@@ -50,6 +57,7 @@ class _ImageViewState extends State<ImageView> {
   }
 
   bool _isDragging = false;
+
   bool get _isVisibleButtonClose => !_isZooming && !_isDragging;
 
   @override
@@ -76,8 +84,7 @@ class _ImageViewState extends State<ImageView> {
         children: [
           PhotoView(
             heroAttributes: PhotoViewHeroAttributes(
-                tag: widget.heroTag,
-                transitionOnUserGestures: true),
+                tag: widget.heroTag, transitionOnUserGestures: true),
             gestureDetectorBehavior: HitTestBehavior.opaque,
             maxScale: PhotoViewComputedScale.contained * 4,
             minScale: PhotoViewComputedScale.contained,

@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
 }
 
 class ImageGalleryScreen extends StatelessWidget {
-
   final List<String> imageUrls = const [
     'https://picsum.photos/id/1001/4912/3264',
     'https://picsum.photos/id/1001/4912/3264',
@@ -61,8 +60,8 @@ class ImageGalleryScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => ImageView(
-                      url: imageUrl,
-                      heroTag: heroTag,
+                    url: imageUrl,
+                    heroTag: heroTag,
                   ),
                   fullscreenDialog: true,
                 ),
@@ -81,7 +80,7 @@ class ImageGalleryScreen extends StatelessWidget {
                       child: CircularProgressIndicator(
                         value: loadingProgress.expectedTotalBytes != null
                             ? loadingProgress.cumulativeBytesLoaded /
-                            loadingProgress.expectedTotalBytes!
+                                loadingProgress.expectedTotalBytes!
                             : null,
                       ),
                     );
